@@ -12,4 +12,24 @@
 --     },
 -- }
 
-return {}
+return {
+    {
+        'machakann/vim-sandwich',
+    },
+    {
+        'cespare/vim-toml'
+    },
+    {
+        'zhaocai/GoldenView.Vim'
+    },
+    {
+
+       'alfredodeza/pytest.vim'
+    },
+    {
+        "codota/tabnine-vim"
+    },
+    {
+       "puremourning/vimspector"
+    }
+}

@@ -20,7 +20,7 @@ local doom = {
   -- false : Disable format on save
   -- true  : Enable format on save
   -- @default = false
-  fmt_on_save = false,
+  fmt_on_save = true,
 
   -- Disable Vim macros
   -- false : Enable Vim macros
@@ -267,7 +267,7 @@ local doom = {
   doom_one = {
     -- If the cursor color should be blue
     -- @default = false
-    cursor_coloring = false,
+    cursor_coloring = true,
     -- If TreeSitter highlighting should be enabled
     -- @default = true
     enable_treesitter = true,
@@ -325,7 +325,9 @@ local nvim = {
   -- @default = {}
   -- example:
   --   { ['sonokai_style'] = 'andromeda' }
-  global_variables = {},
+    global_variables = {
+        ['vimspector_enable_mappings'] = 'HUMAN'
+    },
 
   -- Set custom autocommands
   -- @default = {}
@@ -374,7 +376,10 @@ local nvim = {
   --   {
   --      ['shiftwidth'] = 4
   --   }
-  options = {},
+  options = {
+      ['ignorecase'] = true,
+      ['smartcase'] = true
+    },
 }
 -- }}}
 
