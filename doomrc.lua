@@ -14,31 +14,31 @@
 local doom = {
   ui = {
     "dashboard",          -- Start screen
-    -- "doom-themes",     -- Additional doom emacs' colorschemes
+    "doom-themes",     -- Additional doom emacs' colorschemes
     "statusline",         -- Statusline
     "tabline",            -- Tabline, shows your buffers list at top
     -- "zen",             -- Distraction free environment
     "which-key",          -- Keybindings popup menu like Emacs' guide-key
-    -- "indentlines",     -- Show indent lines
+    "indentlines",     -- Show indent lines
     -- "show_registers",  -- popup that shows register contents
   },
   doom = {
     -- "neorg",           -- Life Organization Tool
-    -- "runner",          -- Open a REPL for the current language or run the current file
-    -- "compiler",        -- Compile (and run) your code with just pressing three keys!
+    "runner",          -- Open a REPL for the current language or run the current file
+    "compiler",        -- Compile (and run) your code with just pressing three keys!
   },
   editor = {
     "auto-session",       -- A small automated session manager for Neovim
     "terminal",           -- Terminal for Neovim (NOTE: needed for runner and compiler)
     "explorer",           -- Tree explorer
-    -- "ranger",          -- Ranger File Browser, requires ranger file browser
+    "ranger",          -- Ranger File Browser, requires ranger file browser
     "symbols",            -- LSP symbols and tags
-    -- "minimap",         -- Code minimap, requires github.com/wfxr/code-minimap
+    "minimap",         -- Code minimap, requires github.com/wfxr/code-minimap
     "gitsigns",           -- Git signs
     "telescope",          -- Highly extendable fuzzy finder over lists
     "formatter",          -- File formatting
     "autopairs",          -- Autopairs
-    -- "editorconfig",    -- EditorConfig support for Neovim
+    "editorconfig",    -- EditorConfig support for Neovim
     "kommentary",         -- Comments plugin
     "lsp",                -- Language Server Protocols
     "dap",                -- Debug Adapter Protocol
@@ -49,30 +49,29 @@ local doom = {
     -- at the end, e.g. 'rust +lsp'. This will install the rust TreeSitter
     -- parser and rust-analyzer
     --
-    -- "html",            -- HTML support
-    -- "css",             -- CSS support
-    -- "javascript",      -- JavaScript support
-    -- "typescript",      -- TypeScript support
-    -- "bash",            -- The terminal gods language
-    -- "python +lsp",     -- Python support + lsp
+    "html +lsp",            -- HTML support
+    "css +lsp",             -- CSS support
+    "javascript",      -- JavaScript support
+    "typescript +lsp",      -- TypeScript support
+    "bash",            -- The terminal gods language
+    "python +lsp +debug",     -- Python support + lsp
     -- "ruby",            -- Look ma, I love the gems!
     "lua",                -- Support for our gods language
     -- "elixir",          -- Build scalable and maintainable software
     -- "haskell",         -- Because Functional programming is fun, isn't it?
 
-    -- "rust +lsp",       -- Let's get rusty!
+    "rust +lsp",       -- Let's get rusty!
     -- "go",              -- Hello, gopher
     -- "cpp",             -- C++ support
-    -- "java",            -- Java support
-
-    -- "config",          -- Configuration files (JSON, YAML, TOML)
-    -- "dockerfile",      -- Do you like containers, right?
+    "java",            -- Java support
+    "config",          -- Configuration files (JSON, YAML, TOML)
+    "dockerfile",      -- Do you like containers, right?
   },
   utilities = {
-    -- "suda",            -- Write and read files without sudo permissions
+    "suda",            -- Write and read files without sudo permissions
     -- "lazygit",         -- LazyGit integration for Neovim, requires LazyGit
     -- "neogit",          -- Magit for Neovim
-    -- "colorizer",       -- Fastest colorizer for Neovim
+    "colorizer",       -- Fastest colorizer for Neovim
     "range-highlight",    -- hightlights ranges you have entered in commandline
   },
   web = {

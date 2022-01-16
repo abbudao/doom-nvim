@@ -14,7 +14,7 @@ local doom = {
   -- false : Disable autosave
   -- true  : Enable autosave
   -- @default = false
-  autosave = false,
+  autosave = true,
 
   -- Format on save
   -- false : Disable format on save
@@ -51,7 +51,7 @@ local doom = {
   -- false : ignores undo Directories (this code block will be ignored)
   -- true  : enable undo files/undo dirs.
   -- @default = false
-  backup = false, -- WARNING: if you change this to false and you have an undo dir already, it will REMOVE the undodir (loss of data might take place)
+  backup = true, -- WARNING: if you change this to false and you have an undo dir already, it will REMOVE the undodir (loss of data might take place)
 
   -- Enable Line wrapping
   -- false : disables line wrapping
@@ -253,7 +253,7 @@ local doom = {
   -- We don'recommend you put this outside of neovim so we've restricted to the path: ~/.config/nvim
   -- WARNING: only put the folder name that you want. (eg: undo_dir = '/undodir')
   -- @default_directory = '~/.config/nvim/undodir'
-  undo_dir = "/undodir",
+  undo_dir = "~/.config/nvim/undodir",
 
   -- Default colorscheme
   -- @default = doom-one
@@ -267,13 +267,13 @@ local doom = {
   doom_one = {
     -- If the cursor color should be blue
     -- @default = false
-    cursor_coloring = false,
+    cursor_coloring = true,
     -- If TreeSitter highlighting should be enabled
     -- @default = true
     enable_treesitter = true,
     -- If the comments should be italic
     -- @default = false
-    italic_comments = false,
+    italic_comments = true,
     -- If the telescope plugin window should be colored
     -- @default = true
     telescope_highlights = true,
@@ -325,8 +325,9 @@ local nvim = {
   -- @default = {}
   -- example:
   --   { ['sonokai_style'] = 'andromeda' }
-  global_variables = {},
-
+  global_variables = {
+	  ['vimspector_enable_mappings'] = 'HUMAN'
+  },
   -- Set custom autocommands
   -- @default = {}
   -- example:
@@ -374,7 +375,10 @@ local nvim = {
   --   {
   --      ['shiftwidth'] = 4
   --   }
-  options = {},
+  options = {
+      ['ignorecase'] = true,
+      ['smartcase'] = true
+    },
 }
 -- }}}
 
